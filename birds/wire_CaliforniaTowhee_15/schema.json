@@ -1,0 +1,185 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "images/8a5904be-fa52-41e3-b2ae-00b2db4b4122.png",
+      "name": " California Towhee",
+      "properties": {
+        "rotation": 0,
+        "x": 0,
+        "width": 456,
+        "y": 0,
+        "scale": 0.32894736528396606,
+        "height": 242
+      }
+    },
+    {
+      "img": "images/61db4fcc-83e2-4a70-852e-99e910334fc8.png",
+      "name": " Yellow-rumped Warbler (Winter/juvenile Myrtle)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.04444444552063942,
+        "width": 677,
+        "y": 0,
+        "scale": 0.22156573832035065,
+        "height": 507
+      }
+    },
+    {
+      "img": "images/a0305aa0-4812-40aa-acbf-a9266c0387a5.png",
+      "name": " Tufted Titmouse",
+      "properties": {
+        "rotation": 0,
+        "x": 0.08888889104127884,
+        "width": 409,
+        "y": 0,
+        "scale": 0.3667481541633606,
+        "height": 332
+      }
+    },
+    {
+      "img": "images/5e2b5550-3e5a-4daa-999b-0c8e47cd6913.png",
+      "name": " Lazuli Bunting (Adult Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.13333334028720856,
+        "width": 693,
+        "y": 0,
+        "scale": 0.21645021438598633,
+        "height": 510
+      }
+    },
+    {
+      "img": "images/6af944cc-d701-4806-939d-19de63fe3855.png",
+      "name": " Black Turnstone",
+      "properties": {
+        "rotation": 0,
+        "x": 0.17777778208255768,
+        "width": 576,
+        "y": 0,
+        "scale": 0.2604166567325592,
+        "height": 560
+      }
+    },
+    {
+      "img": "images/962a5b59-9a39-4470-8b8c-f675402667f5.png",
+      "name": " Chipping Sparrow (Breeding)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.222222238779068,
+        "width": 399,
+        "y": 0,
+        "scale": 0.37593984603881836,
+        "height": 264
+      }
+    },
+    {
+      "img": "images/2ef248ca-1d40-4821-b527-c806c4fe4ef1.png",
+      "name": " Yellow-headed Blackbird (Adult Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.2666666805744171,
+        "width": 688,
+        "y": 0,
+        "scale": 0.21802325546741486,
+        "height": 640
+      }
+    },
+    {
+      "img": "images/7a3b180c-6978-4d03-a32e-4309c4ccd04b.png",
+      "name": " Hermit Thrush",
+      "properties": {
+        "rotation": 0,
+        "x": 0.31111112236976624,
+        "width": 617,
+        "y": 0,
+        "scale": 0.24311183393001556,
+        "height": 526
+      }
+    },
+    {
+      "img": "images/2b34b792-49e0-4679-8762-8193aee1315e.png",
+      "name": " Yellow-rumped Warbler (Winter/juvenile Myrtle)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.35555556416511536,
+        "width": 536,
+        "y": 0,
+        "scale": 0.2798507511615753,
+        "height": 477
+      }
+    },
+    {
+      "img": "images/f8811e33-9bb4-4d37-ab09-85d61e2fa7ed.png",
+      "name": " Western Tanager (Breeding Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.40000003576278687,
+        "width": 709,
+        "y": 0,
+        "scale": 0.21156558394432068,
+        "height": 562
+      }
+    },
+    {
+      "img": "images/66784805-4b5f-4499-aa26-69efeda99c26.png",
+      "name": " Fox Sparrow (Red)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.444444477558136,
+        "width": 503,
+        "y": 0,
+        "scale": 0.2982107400894165,
+        "height": 436
+      }
+    },
+    {
+      "img": "images/5c2b6d28-fa19-4e95-8bbf-524a3ed3b91a.png",
+      "name": " American Goldfinch (Breeding Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.4888889193534851,
+        "width": 638,
+        "y": 0,
+        "scale": 0.23510971665382385,
+        "height": 656
+      }
+    },
+    {
+      "img": "images/1de3f2af-62e7-4be4-8151-1714db8a50c5.png",
+      "name": " Mountain Bluebird",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5333333611488342,
+        "width": 456,
+        "y": 0,
+        "scale": 0.32894736528396606,
+        "height": 520
+      }
+    },
+    {
+      "img": "images/874a1ae7-1ede-4c12-ad5e-1ce240eddf60.png",
+      "name": " Western Bluebird",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5777777433395386,
+        "width": 490,
+        "y": 0,
+        "scale": 0.30612245202064514,
+        "height": 444
+      }
+    },
+    {
+      "img": "images/99e9f0db-8092-4c77-bf50-5c4b576664fb.png",
+      "name": " Yellow-rumped Warbler (Breeding Myrtle)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6222222447395325,
+        "width": 490,
+        "y": 0,
+        "scale": 0.30612245202064514,
+        "height": 702
+      }
+    }
+  ]
+}

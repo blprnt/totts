@@ -1,0 +1,15 @@
+{
+  "type": "wire",
+  "birds": [{
+    "img": "images/27f5394d-c02a-4661-adfe-7002c5b1441d.png",
+    "name": " Painted Bunting (Adult Male)",
+    "properties": {
+      "rotation": 0,
+      "x": 0.25,
+      "width": 239,
+      "y": 0,
+      "scale": 0.6276150345802307,
+      "height": 297
+    }
+  }]
+}

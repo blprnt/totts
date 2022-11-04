@@ -1,0 +1,15 @@
+{
+  "type": "wire",
+  "birds": [{
+    "img": "images/4b9e7723-0f41-4a96-b983-d645c8f3e5da.png",
+    "name": " White-tailed Kite",
+    "properties": {
+      "rotation": 0,
+      "x": 0.02,
+      "width": 355,
+      "y": 0,
+      "scale": 0.4225352108478546,
+      "height": 396
+    }
+  }]
+}

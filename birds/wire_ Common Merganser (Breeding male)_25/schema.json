@@ -1,0 +1,305 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "images/0a76ea26-6463-4f25-a2d7-87837104757b.png",
+      "name": " Common Merganser (Breeding male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.3466666638851166,
+        "width": 414,
+        "y": 0,
+        "scale": 0.36231884360313416,
+        "height": 148
+      }
+    },
+    {
+      "img": "images/0a40a99a-a935-44ad-ae4d-4ea9fb6b3b85.png",
+      "name": " Whimbrel",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5600000023841858,
+        "width": 474,
+        "y": 0,
+        "scale": 0.3164556920528412,
+        "height": 493
+      }
+    },
+    {
+      "img": "images/0a48a334-0f02-400f-b234-53245759213a.png",
+      "name": " Black-bellied Whistling-Duck",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5866666436195374,
+        "width": 403,
+        "y": 0,
+        "scale": 0.37220844626426697,
+        "height": 752
+      }
+    },
+    {
+      "img": "images/0a7ea241-b9a3-4c1a-a660-1f87c5b25003.png",
+      "name": " Cassin's Finch (Adult Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6133333444595337,
+        "width": 285,
+        "y": 0,
+        "scale": 0.5263158082962036,
+        "height": 300
+      }
+    },
+    {
+      "img": "images/0a69f25c-5434-4e26-a4f8-1a9173699126.png",
+      "name": " Carolina Chickadee",
+      "properties": {
+        "rotation": 0,
+        "x": 0.4266666769981384,
+        "width": 384,
+        "y": 0,
+        "scale": 0.390625,
+        "height": 351
+      }
+    },
+    {
+      "img": "images/0a1e090d-2db5-4cd0-88cb-99e56bdb6cea.png",
+      "name": " Canada Goose",
+      "properties": {
+        "rotation": 0,
+        "x": 0.13333334028720856,
+        "width": 649,
+        "y": 0,
+        "scale": 0.23112480342388153,
+        "height": 714
+      }
+    },
+    {
+      "img": "images/0a3baa90-6b43-42ad-8df1-bb3b2a9f9400.png",
+      "name": " Tufted Titmouse",
+      "properties": {
+        "rotation": 0,
+        "x": 0.1599999964237213,
+        "width": 261,
+        "y": 0,
+        "scale": 0.5747126340866089,
+        "height": 496
+      }
+    },
+    {
+      "img": "images/0a33c35e-839d-444c-adef-cd5d963d81a0.png",
+      "name": " Harris's Hawk",
+      "properties": {
+        "rotation": 0,
+        "x": 0.23999999463558197,
+        "width": 609,
+        "y": 0,
+        "scale": 0.2463054209947586,
+        "height": 607
+      }
+    },
+    {
+      "img": "images/0a40a99a-a935-44ad-ae4d-4ea9fb6b3b85.png",
+      "name": " Whimbrel",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5600000023841858,
+        "width": 474,
+        "y": 0,
+        "scale": 0.3164556920528412,
+        "height": 493
+      }
+    },
+    {
+      "img": "images/0a33c35e-839d-444c-adef-cd5d963d81a0.png",
+      "name": " Harris's Hawk",
+      "properties": {
+        "rotation": 0,
+        "x": 0.23999999463558197,
+        "width": 609,
+        "y": 0,
+        "scale": 0.2463054209947586,
+        "height": 607
+      }
+    },
+    {
+      "img": "images/0a40a99a-a935-44ad-ae4d-4ea9fb6b3b85.png",
+      "name": " Whimbrel",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5600000023841858,
+        "width": 474,
+        "y": 0,
+        "scale": 0.3164556920528412,
+        "height": 493
+      }
+    },
+    {
+      "img": "images/0a0eb43e-fa43-4670-8315-806b02c7c04f.png",
+      "name": " Bay-breasted Warbler (Breeding male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.2933333218097687,
+        "width": 649,
+        "y": 0,
+        "scale": 0.23112480342388153,
+        "height": 424
+      }
+    },
+    {
+      "img": "images/0a38e124-1b54-46f2-adc4-174abac4f745.png",
+      "name": " Northwestern Crow",
+      "properties": {
+        "rotation": 0,
+        "x": 0.3199999928474426,
+        "width": 540,
+        "y": 0,
+        "scale": 0.2777777910232544,
+        "height": 511
+      }
+    },
+    {
+      "img": "images/0a76ea26-6463-4f25-a2d7-87837104757b.png",
+      "name": " Common Merganser (Breeding male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.3466666638851166,
+        "width": 414,
+        "y": 0,
+        "scale": 0.36231884360313416,
+        "height": 148
+      }
+    },
+    {
+      "img": "images/0a62be94-7d36-47c3-a6b3-fca5c7952c3c.png",
+      "name": " Semipalmated Sandpiper",
+      "properties": {
+        "rotation": 0,
+        "x": 0.47999998927116394,
+        "width": 592,
+        "y": 0,
+        "scale": 0.25337839126586914,
+        "height": 236
+      }
+    },
+    {
+      "img": "images/0a22c431-6662-4d79-b788-432bfe70e4ae.png",
+      "name": " Swainson's Thrush",
+      "properties": {
+        "rotation": 0,
+        "x": 0.40000003576278687,
+        "width": 495,
+        "y": 0,
+        "scale": 0.3030303120613098,
+        "height": 318
+      }
+    },
+    {
+      "img": "images/0a69f25c-5434-4e26-a4f8-1a9173699126.png",
+      "name": " Carolina Chickadee",
+      "properties": {
+        "rotation": 0,
+        "x": 0.4266666769981384,
+        "width": 384,
+        "y": 0,
+        "scale": 0.390625,
+        "height": 351
+      }
+    },
+    {
+      "img": "images/0a7ea241-b9a3-4c1a-a660-1f87c5b25003.png",
+      "name": " Cassin's Finch (Adult Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6133333444595337,
+        "width": 285,
+        "y": 0,
+        "scale": 0.5263158082962036,
+        "height": 300
+      }
+    },
+    {
+      "img": "images/0a62be94-7d36-47c3-a6b3-fca5c7952c3c.png",
+      "name": " Semipalmated Sandpiper",
+      "properties": {
+        "rotation": 0,
+        "x": 0.47999998927116394,
+        "width": 592,
+        "y": 0,
+        "scale": 0.25337839126586914,
+        "height": 236
+      }
+    },
+    {
+      "img": "images/00a1f51a-139d-42ee-8064-5152b2c19be8.png",
+      "name": " Red-throated Loon (Breeding)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5066666603088379,
+        "width": 418,
+        "y": 0,
+        "scale": 0.35885167121887207,
+        "height": 175
+      }
+    },
+    {
+      "img": "images/0a2f2765-c8c7-4208-b0a4-1d69fcccef2f.png",
+      "name": " Ruby-crowned Kinglet",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5333333611488342,
+        "width": 410,
+        "y": 0,
+        "scale": 0.3658536672592163,
+        "height": 296
+      }
+    },
+    {
+      "img": "images/0a40a99a-a935-44ad-ae4d-4ea9fb6b3b85.png",
+      "name": " Whimbrel",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5600000023841858,
+        "width": 474,
+        "y": 0,
+        "scale": 0.3164556920528412,
+        "height": 493
+      }
+    },
+    {
+      "img": "images/0a48a334-0f02-400f-b234-53245759213a.png",
+      "name": " Black-bellied Whistling-Duck",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5866666436195374,
+        "width": 403,
+        "y": 0,
+        "scale": 0.37220844626426697,
+        "height": 752
+      }
+    },
+    {
+      "img": "images/0a7ea241-b9a3-4c1a-a660-1f87c5b25003.png",
+      "name": " Cassin's Finch (Adult Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6133333444595337,
+        "width": 285,
+        "y": 0,
+        "scale": 0.5263158082962036,
+        "height": 300
+      }
+    },
+    {
+      "img": "images/0a71a6d3-5f1f-4a54-ab9c-adfb47bbd52e.png",
+      "name": " Semipalmated Plover",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6399999856948853,
+        "width": 490,
+        "y": 0,
+        "scale": 0.30612245202064514,
+        "height": 387
+      }
+    }
+  ]
+}

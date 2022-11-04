@@ -1,0 +1,221 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "images/eb30ad90-7a90-4bdf-ace6-c4f149ab67c9.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.18518519401550293,
+        "width": 645,
+        "y": 0,
+        "scale": 0.23255814611911774,
+        "height": 600
+      }
+    },
+    {
+      "img": "images/217f4a02-df0b-4cbe-842c-1de91c638998.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5925925970077515,
+        "width": 651,
+        "y": 0,
+        "scale": 0.2304147481918335,
+        "height": 392
+      }
+    },
+    {
+      "img": "images/1e33978f-7545-49b3-a1c9-7481cb81b2d1.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5185185074806213,
+        "width": 583,
+        "y": 0,
+        "scale": 0.2572898864746094,
+        "height": 541
+      }
+    },
+    {
+      "img": "images/7539ec30-12af-43b9-bb81-e4aeee34a60b.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.555555522441864,
+        "width": 403,
+        "y": 0,
+        "scale": 0.37220844626426697,
+        "height": 339
+      }
+    },
+    {
+      "img": "images/00114d1f-8049-4003-8517-4449acd06059.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.14814814925193787,
+        "width": 813,
+        "y": 0,
+        "scale": 0.18450184166431427,
+        "height": 485
+      }
+    },
+    {
+      "img": "images/eb30ad90-7a90-4bdf-ace6-c4f149ab67c9.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.18518519401550293,
+        "width": 645,
+        "y": 0,
+        "scale": 0.23255814611911774,
+        "height": 600
+      }
+    },
+    {
+      "img": "images/aafb76fb-583c-4e00-b157-95423af9e3d1.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.222222238779068,
+        "width": 458,
+        "y": 0,
+        "scale": 0.32751092314720154,
+        "height": 546
+      }
+    },
+    {
+      "img": "images/ae55e434-4f76-4db8-adc9-760d017eaeb4.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.25925925374031067,
+        "width": 361,
+        "y": 0,
+        "scale": 0.41551247239112854,
+        "height": 532
+      }
+    },
+    {
+      "img": "images/7f4a10ae-0bf8-4a8c-b45c-d0a0b17ae5c2.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.40740740299224854,
+        "width": 255,
+        "y": 0,
+        "scale": 0.5882353186607361,
+        "height": 256
+      }
+    },
+    {
+      "img": "images/64fac9bc-ea23-48d2-ab52-cefec237f029.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.3333333432674408,
+        "width": 453,
+        "y": 0,
+        "scale": 0.33112582564353943,
+        "height": 420
+      }
+    },
+    {
+      "img": "images/4cbb32f7-bb7a-4213-aa68-2ed30012f743.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.37037038803100586,
+        "width": 406,
+        "y": 0,
+        "scale": 0.3694581389427185,
+        "height": 487
+      }
+    },
+    {
+      "img": "images/7f4a10ae-0bf8-4a8c-b45c-d0a0b17ae5c2.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.40740740299224854,
+        "width": 255,
+        "y": 0,
+        "scale": 0.5882353186607361,
+        "height": 256
+      }
+    },
+    {
+      "img": "images/7539ec30-12af-43b9-bb81-e4aeee34a60b.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.555555522441864,
+        "width": 403,
+        "y": 0,
+        "scale": 0.37220844626426697,
+        "height": 339
+      }
+    },
+    {
+      "img": "images/c57aea55-cfd1-4559-b279-419245c79290.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.4814814627170563,
+        "width": 510,
+        "y": 0,
+        "scale": 0.29411765933036804,
+        "height": 527
+      }
+    },
+    {
+      "img": "images/1e33978f-7545-49b3-a1c9-7481cb81b2d1.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5185185074806213,
+        "width": 583,
+        "y": 0,
+        "scale": 0.2572898864746094,
+        "height": 541
+      }
+    },
+    {
+      "img": "images/7539ec30-12af-43b9-bb81-e4aeee34a60b.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.555555522441864,
+        "width": 403,
+        "y": 0,
+        "scale": 0.37220844626426697,
+        "height": 339
+      }
+    },
+    {
+      "img": "images/217f4a02-df0b-4cbe-842c-1de91c638998.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.5925925970077515,
+        "width": 651,
+        "y": 0,
+        "scale": 0.2304147481918335,
+        "height": 392
+      }
+    },
+    {
+      "img": "images/28fff24d-5891-401e-b0b7-97de5bf21d26.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6296296119689941,
+        "width": 401,
+        "y": 0,
+        "scale": 0.3740648329257965,
+        "height": 432
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "images/10ae327f-fa52-49db-a92f-77c27814bfd9.png",
+      "name": " White-crowned Sparrow (Adult)",
+      "properties": {
+        "rotation": 0,
+        "x": 0,
+        "width": 224,
+        "y": 0,
+        "scale": 0.6696428656578064,
+        "height": 275
+      }
+    },
+    {
+      "img": "images/f8b74167-f63a-4721-9d53-1c101f6d402b.png",
+      "name": " American Tree Sparrow",
+      "properties": {
+        "rotation": 0,
+        "x": 0.0533333346247673,
+        "width": 199,
+        "y": 0,
+        "scale": 0.7537688612937927,
+        "height": 307
+      }
+    },
+    {
+      "img": "images/0b242c2d-e95d-49fc-99d7-748bc39890bb.png",
+      "name": " White-throated Sparrow (White-striped)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.02666666731238365,
+        "width": 610,
+        "y": 0,
+        "scale": 0.24590164422988892,
+        "height": 591
+      }
+    },
+    {
+      "img": "images/1ee8a802-1b83-436e-8db7-a3daba12421d.png",
+      "name": " House Sparrow (Male)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.03999999910593033,
+        "width": 523,
+        "y": 0,
+        "scale": 0.2868068814277649,
+        "height": 494
+      }
+    },
+    {
+      "img": "images/f8b74167-f63a-4721-9d53-1c101f6d402b.png",
+      "name": " American Tree Sparrow",
+      "properties": {
+        "rotation": 0,
+        "x": 0.0533333346247673,
+        "width": 199,
+        "y": 0,
+        "scale": 0.7537688612937927,
+        "height": 307
+      }
+    },
+    {
+      "img": "images/718cf06c-2140-4ff2-9888-c8698f2c6997.png",
+      "name": " Chipping Sparrow (Breeding)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.06666667014360428,
+        "width": 281,
+        "y": 0,
+        "scale": 0.5338078141212463,
+        "height": 224
+      }
+    },
+    {
+      "img": "images/df95ecd2-a363-4cf4-8474-de836fc0faeb.png",
+      "name": " Fox Sparrow (Red)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.07999999821186066,
+        "width": 443,
+        "y": 0,
+        "scale": 0.3386004567146301,
+        "height": 295
+      }
+    },
+    {
+      "img": "images/4e558f9a-9cd4-4b01-bbf7-a5cefa28a221.png",
+      "name": " Harris's Sparrow (Adult)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.09333333373069763,
+        "width": 279,
+        "y": 0,
+        "scale": 0.5376344323158264,
+        "height": 210
+      }
+    },
+    {
+      "img": "images/da207710-e7e4-4f42-b2e6-99b5f357f433.png",
+      "name": " White-throated Sparrow (White-striped)",
+      "properties": {
+        "rotation": 0,
+        "x": 0.6399999856948853,
+        "width": 766,
+        "y": 0,
+        "scale": 0.19582244753837585,
+        "height": 711
+      }
+    },
+    {
+      "img": "images/7f2f31fd-6618-41c6-b65a-0fd8b2851bc9.png",
+      "name": " American Tree Sparrow",
+      "properties": {
+        "rotation": 0,
+        "x": 0.653333306312561,
+        "width": 559,
+        "y": 0,
+        "scale": 0.26833632588386536,
+        "height": 429
+      }
+    }
+  ]
+}
