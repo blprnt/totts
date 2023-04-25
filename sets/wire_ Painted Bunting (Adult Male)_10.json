@@ -1,0 +1,65 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "34cd2484-3d78-4ced-a358-94c91a3dea41.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "b8e12148-4cbb-42c6-8403-5949448e2e2a.png",
+      "name": " Painted Bunting (Female/juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "fe66790a-8f9f-4bd3-9719-00e5017c7484.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "786bf3af-c79e-4cf9-83df-f0ad41e9277f.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "b9bc8e1a-7ffa-4bae-b518-ffc5466a6987.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "4a6dd79e-f921-41cd-bcba-b9cc421c9b87.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "449bbc7c-c2cf-4bf1-b72b-899fae044215.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "61dd3f9f-09c3-44d4-b7f0-da676a68808b.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8fe61866-5d70-4de1-816b-162a2f9d7eef.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "2b51261a-b16d-4f75-9249-777120b647a3.png",
+      "name": " Painted Bunting (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "type": "pairs",
+  "birds": [
+    {
+      "img": "e5710f54-c211-48f4-ae38-d9524ad2d6f6.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "e89d6685-9801-4457-8ddf-26bc529ecf3e.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "3ef09c98-dc77-42f7-8161-64d212db446d.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "ede81f1e-d041-4360-ba22-9fc57969967e.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "eb10b0a0-7e98-4cab-8515-4a89d89c77cb.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0c536fcf-f563-4c04-ac78-ffd70f5b8485.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "a19a6b53-0eff-4d9e-b686-c67df2213067.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "53e15f1a-e83b-4ae2-ad1f-e4944c2092c6.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "536c07b0-012a-4c34-a5aa-6046ac37acf4.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "93253930-06d3-4a31-b866-9786e84ceb91.png",
+      "name": " Golden Eagle (Adult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "78cc44e5-2fab-456c-b058-31002b3b6b5d.png",
+      "name": " Golden Eagle (Adult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8778ef2a-ed99-4bee-b9a8-f641717cac90.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "c1ef28c9-cd70-405c-9876-49f48cd51867.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "f5785c6d-92a7-401f-9372-dabb17eb0c4d.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "9bd82130-f285-424b-bb5f-69ebde9ae0c3.png",
+      "name": " Golden Eagle (Adult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "00689c63-5a2a-4922-88e2-48934772f741.png",
+      "name": " Golden Eagle (Adult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0229dc53-452c-4ada-a9c8-fbcae1413c81.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0e2a3ea6-22d1-4f1b-b4b2-6a54b82fabab.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0cb7e5b6-3005-4526-93a8-7afc91cdd56e.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "3fcbbccc-9f69-43cd-9d75-77c48e51ff8f.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "4b36d928-cf28-4e94-80f0-8c14dc60c06d.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8c349023-080b-4abd-9296-a5abbbe37a05.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0314ceb6-ca78-4b33-b62e-d26516c995a8.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "f419958e-fa75-4bb5-b14a-bc3160275dba.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "aae535c1-af4f-4de1-95e4-4f6518c3db92.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "d1968a7a-3949-41f4-a2dc-b0b719bb8e6a.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0e2a3ea6-22d1-4f1b-b4b2-6a54b82fabab.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "42641a29-dbec-4f1b-9a6f-ae108c1d9c47.png",
+      "name": " Golden Eagle (Immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "ada72687-238e-44bf-948d-4562521aefb5.png",
+      "name": " Bald Eagle (Immature, juvenile)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "18cc4821-3618-4416-a0fd-0a28cba17d89.png",
+      "name": " Bald Eagle (Adult, subadult)",
+      "type": "bird",
+      "properties": {}
+    }
+  ]
+}

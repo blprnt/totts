@@ -1,12 +1,21 @@
 let birdMap = {};
 
 function fileBirdSequence(_label) {
-	fetch("birds/" + _label + "/schema.json")
+	fetch("sets/" + _label + ".json")
     .then((response) => response.json())
     .then((json) => birdMap[_label] = json);
 }
 
-function buildBirdSequence(_label, _el, _mirror, _props) {
+function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY
+  };
+}
+
+function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset) {
+	let birds = [];
 	let sc = _props ? _props.scale:1.25;
 	let j = birdMap[_label];
 	//Create the main div
@@ -14,63 +23,85 @@ function buildBirdSequence(_label, _el, _mirror, _props) {
 	birdDiv.className = "birdCage";
 	birdDiv.id = _label;
 
-	if (_props.offset) {
 
+	if (_props.offset.indexOf("px") == -1) {
+		console.log("BUILD");
+		
+		let holder = document.querySelector("#" + _props.offset);
+		console.log(getOffset(holder).top);
+		birdDiv.style.top = getOffset(holder).top + "px";
+	} else {
 		birdDiv.style.top = _props.offset;
 	}
-	for (let i = 0; i < j.birds.length; i++) {
+	for (let i = 0; i < Math.min(j.birds.length, 10); i++) {
 		//Place the bird images
-		let img = makeBird(j.birds[i], sc, _label)
-		img.style.left = (((j.birds[i].properties.x * sc) * 100) )+ "%";
-		if (_props.position =="bottom") {
-			img.style.bottom = "10px"
-		}
-		img.style.opacity = 0;
-
-
-		//{rotation:360, transformOrigin:"left top"}
+		let img = makeBird(j.birds[i], sc, _label);
+		if (_scaleset) img.style.scale = _scaleset[i];
+		birds.push(img);
 		birdDiv.appendChild(img);
-		//mirror 
-		if (_mirror) {
-			img = makeBird(j.birds[i], sc, _label);
-
-			img.style.left = ((1 - (j.birds[i].properties.x * sc)) * 100)+ "%";
-			if (_props.position =="bottom") {
-				img.style.bottom = "10px"
-			}
-			img.style["transform-origin"] = "left center";
-			img.style.transform = "scale(-1, 1)";
-			img.style.opacity = 0;
-
-			birdDiv.appendChild(img);
-		}
-
 	}
 	_el.appendChild(birdDiv);
 
+	if (_positioner) _positioner(birds, _props);
 
-
-			anime({
-				targets: "#" + _label + " .bird",
-				opacity:1,
-				rotation:0,
-				delay: anime.stagger(30)
-			}).play();
+	console.log("#" + _label + " .birdy");
+	//Animate
+	anime({
+		targets: ".birdy",
+		opacity:1,
+		rotation:180,
+		delay: anime.stagger(100)
+	}).play();
 }	
+
+
+function mirror(_birds, _props) {
+	for (let i = 0; i < _birds.length; i+=2) {
+		let leftBird = _birds[i];
+		let rightBird = _birds[i + 1];
+		console.log(leftBird);
+		let xOff = i * _props.space ;
+		leftBird.style.right = (44 - xOff) + "vw";
+		rightBird.style.left = (44 - xOff) + "vw";
+		rightBird.style["z-index"] = _props.zoff + (100 - i);
+		leftBird.style["z-index"] =  _props.zoff + (99 - i);
+		rightBird.classList.add("flip");
+		leftBird.style.width = leftBird.style.height = (_props.size - (i * _props.fade ) )+ "px";
+		rightBird.style.width = rightBird.style.height = (_props.size - (i * _props.fade) )+ "px";
+		leftBird.style.opacity = 0;
+		rightBird.style.opacity = 0;
+
+		if (_props.bw) {
+			leftBird.classList.add("bw");
+			rightBird.classList.add("bw");
+
+		}
+	}
+}
+
+function centerSpread(_birds, _props) {
+	let fullWidth = _birds.length * _props.space;
+	for (let i = 0; i < _birds.length; i++) {
+		let bird = _birds[i];
+		let xOff = i * _props.space;
+		bird.style.left = (xOff + (100 - fullWidth)/2) + "vw";
+		bird.style["z-index"] =  _props.zoff + (99 + i);
+		bird.style.width = bird.style.height = (_props.size - (i * _props.fade ) )+ "px";
+		bird.style.opacity = 0;
+		bird.style["vertical-align"] = "bottom"; 
+	}
+}
 
 function makeBird(bird, sc, label) {
 
+		let bd = document.createElement("div");
 		let img = document.createElement("img");
-		img.setAttribute("src", "birds/" + label + "/" + bird.img);
-		let w = bird.properties.width * sc * bird.properties.scale;
-		let h = bird.properties.height * sc * bird.properties.scale;
-		img.setAttribute("width", w);
-		img.setAttribute("height", h);
-		img.setAttribute("alt", bird.name);
-		img.className = "bird";
-		img.style.position = "absolute";
-		img.style.left = (((bird.properties.x * sc) * 100) )+ "%";
-		return(img);
+		img.setAttribute("src", "images/" + bird.type + "/" + bird.img);
+		bd.style.scale = sc;
+		if (bird.name) img.setAttribute("alt", bird.name);
+		bd.className = "birdy";
+		bd.appendChild(img);
+		return(bd);
 }
 
 
@@ -89,11 +120,20 @@ function initBirds() {
 	clearInterval(start);
 }
 
-fileBirdSequence("wire_CaliforniaTowhee_15");
-fileBirdSequence("wire_CaliforniaThrasher_15");
-fileBirdSequence("wire_White-tailedKite_1")
-fileBirdSequence("wire_PaintedBunting_1");
-fileBirdSequence("wire_VermilionFlycatcher_18");
+fileBirdSequence("pairs_ Greater Roadrunner_30");
+fileBirdSequence("pairs_ Bald Eagle (Immature, juvenile)_30");
+fileBirdSequence("pairs_ Black-throated Blue Warbler (FemaleImmature male)_30");
+fileBirdSequence("pairs_ Indigo Bunting (Adult Male)_30");
+fileBirdSequence("pairs_ Summer Tanager (Adult Male)_30");
+fileBirdSequence("pairs_ Western Tanager (Breeding Male)_30");
+fileBirdSequence("pairs_docs");
+fileBirdSequence("pairs_");
+fileBirdSequence("pairs_13940679");
+fileBirdSequence("pairs_12994082");
+fileBirdSequence("pairs_13940681");
+fileBirdSequence("pairs_ Downy Woodpecker_30");
+fileBirdSequence("wire_ Painted Bunting (Adult Male)_10");
+fileBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6")
 
 let start = setInterval(initBirds, 1000);
 
@@ -129,13 +169,12 @@ document.querySelector(".content").scrollTop = 200;
 				case 0:
 					hideHeader(false);
 					
-					buildBirdSequence("wire_CaliforniaThrasher_15", cage,  true, {scale:1.25, position:"bottom"});
-					buildBirdSequence("wire_CaliforniaTowhee_15", cage, true, {scale:0.45, position:"top"});
-					buildBirdSequence("wire_White-tailedKite_1", cage, true, {scale:1.4, position:"top"});
-					buildBirdSequence("wire_PaintedBunting_1", cage, true, {scale:1.8, position:"top"});
+					buildBirdSequence("pairs_13940681", cage,  true, {size:300, scale:3, position:"bottom", offset:"0px", space:8, fade:3, zoff:0, bw:true}, mirror);
+					buildBirdSequence("pairs_ Indigo Bunting (Adult Male)_30", cage,  true, {size:300, scale:1.2, position:"top", offset:"50px", space:4, fade:10, zoff:100}, mirror);
+
 					break;
 				case 1:
-					buildBirdSequence("wire_VermilionFlycatcher_18", cage, false, {scale:1., position:"bottom", offset:"640px"});
+					buildBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6", document.body, false, {size:400, scale:1., position:"bottom", offset:"woodpeckers", space:4, fade:0}, centerSpread, [1, 0.475, 0.27, 0.23, 0.23, 0.09]);
 					break;
 
 			}
@@ -146,14 +185,11 @@ document.querySelector(".content").scrollTop = 200;
 			console.log("EXIT" + response.index);
 			switch(response.index) {
 				case 0:
-					clearBirdSequence("wire_CaliforniaThrasher_15");
-					clearBirdSequence("wire_CaliforniaTowhee_15");
-					clearBirdSequence("wire_White-tailedKite_1");
-					clearBirdSequence("wire_PaintedBunting_1");
+					//clearBirdSequence("pairs_ Black-throated Blue Warbler (FemaleImmature male)_30");
 					hideHeader(true);
 					break;
 				case 1:
-					clearBirdSequence("wire_VermilionFlycatcher_18");
+					//clearBirdSequence("pairs_ Greater Roadrunner_30");
 					break;
 			}
 

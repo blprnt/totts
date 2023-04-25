@@ -1,0 +1,35 @@
+{
+  "type": "wire",
+  "birds": [
+    {
+      "img": "4c0c3c37-4800-44bd-8743-fdc9dfaddcd9.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "aafb76fb-583c-4e00-b157-95423af9e3d1.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "2808c0dc-394c-483c-b77f-e06418f3471d.png",
+      "name": " Vermilion Flycatcher (Female, immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0e311d73-6151-4003-86ca-c98740cb9c58.png",
+      "name": " Vermilion Flycatcher (Female, immature)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "17416097-3de2-4d26-8c52-4338b68372a7.png",
+      "name": " Vermilion Flycatcher (Adult male)",
+      "type": "bird",
+      "properties": {}
+    }
+  ]
+}

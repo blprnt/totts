@@ -1,0 +1,185 @@
+{
+  "type": "pairs",
+  "birds": [
+    {
+      "img": "688a70c8-6134-4f93-af88-bb74a9c3697f.png",
+      "name": " Summer Tanager (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "555a97f3-e26e-4b4d-8f7a-e784b3071b1b.png",
+      "name": " Summer Tanager (Immature Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "78fd551f-994e-45c3-8d1e-80f0b9c5c564.png",
+      "name": " Scarlet Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "00cdf68d-4aec-456c-b64c-8f01c86b3483.png",
+      "name": " Summer Tanager (Female)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8de4f701-0842-4485-81bc-5e954e27569c.png",
+      "name": " Western Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "d248fb2d-d24d-4612-827c-6874a8c4439e.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "47a2957a-7d9c-4534-b075-1738613cf4fb.png",
+      "name": " Scarlet Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "cd894ec7-9902-48f4-bb73-f4a692ebfed9.png",
+      "name": " Scarlet Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "fad5e3f4-cd6f-446c-980c-700b8a01e31e.png",
+      "name": " Scarlet Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8d0a7083-1e81-43fd-9c08-2c8c66071364.png",
+      "name": " Scarlet Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "942e1c20-901a-41ee-983a-6571e7fa05e8.png",
+      "name": " Scarlet Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "89a728a8-df10-4d12-b74c-c2b7dab7e22e.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "5d24f8e2-db79-46da-a0d2-148fe3053388.png",
+      "name": " Scarlet Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "f25f9486-002f-4ddf-b7b1-464d29106c8f.png",
+      "name": " Summer Tanager (Female)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "a01507aa-9673-4179-aa0d-80dc38fa018d.png",
+      "name": " Summer Tanager (Immature Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "62037fd5-5415-418e-ba8e-9a2ae9e8132f.png",
+      "name": " Summer Tanager (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "935b3e52-8f8b-41cd-8505-7a396acadb98.png",
+      "name": " Scarlet Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "bf4a6a03-4508-4352-806c-56bae3af6123.png",
+      "name": " Summer Tanager (Female)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "f142f789-6118-4a37-8d36-6b48b974a5f8.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "8fff379e-c853-46d9-80aa-7776419e89db.png",
+      "name": " Summer Tanager (Female)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "0cd2249c-fdab-4539-990e-ccb3537bce84.png",
+      "name": " Summer Tanager (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "feffb4db-5f70-4fc1-a5a7-84a3dc56a877.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "eae21471-dca8-4a13-a31e-a766d5244c44.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "e00f17a1-22dd-4c58-9933-57e4b7e6efe5.png",
+      "name": " Summer Tanager (Adult Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "6455c9ae-da6f-4936-9087-112036462969.png",
+      "name": " Western Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "feffb4db-5f70-4fc1-a5a7-84a3dc56a877.png",
+      "name": " Western Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "c0f476a4-e1b1-4e12-8e3c-4d5dfbe03094.png",
+      "name": " Summer Tanager (Immature Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "7b12d36d-4fac-4596-b7a6-abdade4f5cbe.png",
+      "name": " Summer Tanager (Immature Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "ddb252d9-68b0-4540-bd8b-cadb2f5ce477.png",
+      "name": " Western Tanager (Female/Nonbreeding Male)",
+      "type": "bird",
+      "properties": {}
+    },
+    {
+      "img": "912ca150-df4a-40f5-a9fa-492c7c5dd0e2.png",
+      "name": " Scarlet Tanager (Breeding Male)",
+      "type": "bird",
+      "properties": {}
+    }
+  ]
+}
