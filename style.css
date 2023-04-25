@@ -114,6 +114,7 @@ body {
   position:relative;
   margin:auto;
   width:50vw;
+  min-width:450px;
   height:100%;
   overflow-x:visible;
   overflow-y:scroll;
