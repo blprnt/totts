@@ -191,6 +191,11 @@ figure img {
   max-width:var(--image-max-width)
 }
 
+#sdbird {
+  margin-top:-50px;
+  margin-bottom: -100px;
+}
+
 #arrowWrapper {
   width:100%;
   display: flex;
