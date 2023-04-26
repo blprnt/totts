@@ -9,8 +9,8 @@ Tale of Two Training Sets Styles
   --color-text-main: #EEEEEE;
   --color-primary: #3F8C41;
   --wrapper-height: 87vh;
-  --image-max-width: 50vw;
-  --image-margin: 3rem;
+  --image-max-width: 40vw;
+  --image-margin: 0rem;
   --font-family: "Avenir";
   --font-family-header: "Futura";
 }
@@ -119,6 +119,10 @@ body {
   overflow-y:scroll;
 }
 
+.content img {
+  max-width:40vw;
+}
+
 .title {
   text-align:center;
   font-family: mrs-eaves, serif;
@@ -200,7 +204,8 @@ h3 {
 }
 
 figure {
-  
+  margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 figcaption {

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <!--link rel="icon" href="https://glitch.com/favicon.ico" /-->
 
-    <title>A Tale of Two Training Sets</title>
+    <title>A Tale of Two Data Sets</title>
 
     <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
     <meta name="description" content="" />
@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
     <meta
       property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
+      content="A Tale of Two Data Sets: An essay about how machine learning training sets encode philopphies along with data."
     />
     <meta
       property="og:image"
@@ -97,15 +97,17 @@
         <p>
           When Serge Belongie joined the Perona Lab for his sabbatical he brought along a stack of books that his advisor at UC Berkeley, Jitendra Malek, had given him. They were field guides for birds. Belongie had always been interested in taxonomies and principles of classification, but the challenge of bird recognition seemed like a pipe dream in the 1990s. The idea never left him. 
         </p>
+        <figure class="scrollStep">
+          <img
+            src="images/GuideBook.gif"
+          />
+          <figcaption>Some bird guide books are indexed by sillhouettes, an idea that would inform Serge Belongie's idea for shape context, a widely used technique in computer vision</figcaption>
+        </figure>
+
         <p>
           At Perona’s lab at that time, researchers were working towards workflows where computers could be taught to see many different classes of things, and where their learning wouldn’t need to be supervised by humans. It would prove to be slow going, at least in part because the researchers in the labs would assemble training sets themselves. Belongie remembers scenes of people in the labs making training sets from whatever they found nearby. “They would make their Caltech 101 data set,” Belongie described. “Grabbing mugs and staplers, putting them on a turntable and taking pictures.”
         </p>
-        <!--figure class="scrollStep">
-          <img
-            src="https://cdn.glitch.global/e3bd190e-162e-419b-8a1f-af2e03091772/IBM_NYT.png?v=1667224703456"
-          />
-          <figcaption>Fred Jelinek in The New York Times in 1984</figcaption>
-        </figure-->
+        
          <p>
           By contrast, the type of learning that was embodied in field guides, where birds could only be told apart by paying attention to the smallest details, seemed so different from what his labmates were doing with  mugs and staplers on turntables. To Belongie these seemed to be “gimmick problems.” People seemed to be rushing about, building datasets with the sole purpose of feeding the needs of the algorithms, and it annoyed Belongie. 
         </p>
@@ -116,7 +118,7 @@
           By 2005, computer vision models could only reliably detect four objects: motorbikes, bicycles, people, and cars. In 2007, that number rose to twenty, now including airplanes, birds, bottles, some furniture, a TV. The VOC (Visual Object Class) challenge which is held yearly at the PASCAL conference run by Oxford University was the place where progress was benchmarked. A good model in 2009 could correctly label 72.5% of the test images in the car class in a dataset of 9,000. It could only recognize 59.3% of the dogs and just 44.2% of the bottles.  
         </p>
         <figure class="scrollStep" id="nabirds">
-          <img src="https://host.robots.ox.ac.uk/pascal/VOC/voc2009/examples/images/bird_01.jpg"/>
+          <img src="images/bird_01.jpeg"/>
           <figcaption>Birds were included as one of the 20 object classes in 2009 the PASCAL image challenge.</figcaption>
         </figure>
         
