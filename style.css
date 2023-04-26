@@ -131,6 +131,7 @@ body {
   margin: 0;
   padding-top:150px;
   padding-bottom: 50px;
+  text-decoration: underline 3px;
 }
 
 .birdy img {
@@ -198,6 +199,8 @@ h2 {
 
   font-family: mrs-eaves, serif;
   font-size:2em;
+  color: var(--color-primary);
+
 }
 
 h3 {
