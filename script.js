@@ -14,7 +14,7 @@ function getOffset(el) {
   };
 }
 
-function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset) {
+function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset, _annotations) {
 	let birds = [];
 	let sc = _props ? _props.scale:1.25;
 	let j = birdMap[_label];
@@ -23,13 +23,16 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset)
 	birdDiv.className = "birdCage";
 	birdDiv.id = _label;
 
+	if (_props.overflow) {
+		birdDiv.style.overflow = "hidden";
+	}
+
 
 	if (_props.offset.indexOf("px") == -1) {
 		console.log("BUILD");
 		
 		let holder = document.querySelector("#" + _props.offset);
-		console.log(getOffset(holder).top);
-		birdDiv.style.top = getOffset(holder).top + "px";
+		birdDiv.style.top = ((_props.ybump ? _props.ybump:0) + getOffset(holder).top) + "px";
 	} else {
 		birdDiv.style.top = _props.offset;
 	}
@@ -39,10 +42,15 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset)
 		if (_scaleset) img.style.scale = _scaleset[i];
 		birds.push(img);
 		birdDiv.appendChild(img);
+		if (_annotations && _annotations[i]) {
+			annotate(img, _annotations[i]);
+		}
 	}
 	_el.appendChild(birdDiv);
 
 	if (_positioner) _positioner(birds, _props);
+
+
 
 	console.log("#" + _label + " .birdy");
 	//Animate
@@ -50,7 +58,7 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset)
 		targets: ".birdy",
 		opacity:1,
 		rotation:180,
-		delay: anime.stagger(100)
+		delay: anime.stagger(50)
 	}).play();
 }	
 
@@ -84,12 +92,33 @@ function centerSpread(_birds, _props) {
 	for (let i = 0; i < _birds.length; i++) {
 		let bird = _birds[i];
 		let xOff = i * _props.space;
-		bird.style.left = (xOff + (100 - fullWidth)/2) + "vw";
+		bird.style.left = (xOff + (50 - (fullWidth))) + "vw";
 		bird.style["z-index"] =  _props.zoff + (99 + i);
 		bird.style.width = bird.style.height = (_props.size - (i * _props.fade ) )+ "px";
 		bird.style.opacity = 0;
 		bird.style["vertical-align"] = "bottom"; 
 	}
+}
+
+function annotate(_target, _obj) {
+	//_obj = 
+	let r = _target.querySelector("img").getBoundingClientRect();
+	let d = document.createElement("div");
+	d.classList.add("diagonal");
+	d.style.top = _obj.start.y + "px";
+	d.style.left = _obj.start.x + "px";
+	d.style.width = (_obj.end.x - _obj.start.x) + "px";
+	d.style.height = (_obj.end.y - _obj.start.y) + "px";
+	console.log(_target.style.scale);
+	d.style.scale = 1.0 / _target.style.scale;
+	let td = document.createElement("div");
+	td.innerHTML = _obj.label;
+	td.classList.add("annotation");
+	td.style.top = d.style.top;
+	td.style.left = d.style.right;
+	d.appendChild(td);
+	_target.appendChild(d);
+
 }
 
 function makeBird(bird, sc, label) {
@@ -142,16 +171,22 @@ let start = setInterval(initBirds, 1000);
 Scrolling stuff
 ***************/
 
-function hideHeader(hide) {
+function hideHeader(hide, _instant) {
 	console.log("Hide header");
 	
 	anime({
 		targets:".header",
 		height:(hide ? 0:54) +"vh",
-		duration:800,
+		duration:(_instant? 1:800),
 		easing: "easeOutQuad" 
 	})
 
+}
+
+window.onload = function() {
+	console.log("LOADED");
+	console.log(window.scrollY);
+	
 }
 
 document.querySelector(".content").scrollTop = 200;
@@ -169,12 +204,35 @@ document.querySelector(".content").scrollTop = 200;
 				case 0:
 					hideHeader(false);
 					
-					buildBirdSequence("pairs_13940681", cage,  true, {size:300, scale:3, position:"bottom", offset:"0px", space:8, fade:3, zoff:0, bw:true}, mirror);
+					buildBirdSequence("pairs_13940681", cage,  true, {size:300, scale:3, position:"bottom", offset:"0px", space:8, fade:3, zoff:0, bw:true, overflow:true}, mirror);
 					buildBirdSequence("pairs_ Indigo Bunting (Adult Male)_30", cage,  true, {size:300, scale:1.2, position:"top", offset:"50px", space:4, fade:10, zoff:100}, mirror);
 
 					break;
 				case 1:
-					buildBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6", document.body, false, {size:400, scale:1., position:"bottom", offset:"woodpeckers", space:4, fade:0}, centerSpread, [1, 0.475, 0.27, 0.23, 0.23, 0.09]);
+					buildBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6", document.body, false, {size:400, scale:1., position:"bottom", offset:"woodpeckers", ybump:100, space:6, fade:0}, centerSpread, [1, 0.475, 0.27, 0.23, 0.23, 0.09],
+						[{
+							start:{x:80, y:-50},
+							end:{x:130, y:80},
+							label:"SmugMug: 18%.5"
+						},{
+							start:{x:80, y:-50},
+							end:{x:100, y:100},
+							label:"WordPress: 8.8%"
+						},{
+							start:{x:90, y:-50},
+							end:{x:100, y:0},
+							label:"Flickr: 5%"
+						},{
+							start:{x:110, y:-20},
+							end:{x:130, y:50},
+							label:"PBase.com: 4.3%"
+						},{
+							start:{x:130, y:-60},
+							end:{x:150, y:40},
+							label:"Fine Art America: 4.2%"
+						}
+						]
+						);
 					break;
 
 			}
@@ -196,6 +254,9 @@ document.querySelector(".content").scrollTop = 200;
 		}
 
 		function init() {
+			if (window.scrollY > 0) {
+				hideHeader(true, true);
+			}
 			// 1. setup the scroller with the bare-bones options
 			// 		this will also initialize trigger observations
 			// 2. bind scrollama event handlers (this can be chained like below)
