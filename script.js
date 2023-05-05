@@ -22,6 +22,9 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset,
 	let birdDiv = document.createElement("div");
 	birdDiv.className = "birdCage";
 	birdDiv.id = _label;
+	if (_props.reverse) {
+		j.birds.reverse();
+	}
 
 	if (_props.overflow) {
 		birdDiv.style.overflow = "hidden";
@@ -36,14 +39,23 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset,
 	} else {
 		birdDiv.style.top = _props.offset;
 	}
-	for (let i = 0; i < Math.min(j.birds.length, 10); i++) {
-		//Place the bird images
-		let img = makeBird(j.birds[i], sc, _label);
-		if (_scaleset) img.style.scale = _scaleset[i];
-		birds.push(img);
-		birdDiv.appendChild(img);
-		if (_annotations && _annotations[i]) {
-			annotate(img, _annotations[i]);
+
+
+	let doubleTest = [];
+	let deDubbed = [];
+
+	for (let i = 0; i < Math.min(j.birds.length, 100); i++) {
+		if (!doubleTest[j.birds[i].img]) {
+			//Place the bird images
+			let img = makeBird(j.birds[i], sc, _label);
+			if (_scaleset) img.style.scale = _scaleset[i];
+			birds.push(img);
+			birdDiv.appendChild(img);
+			if (_annotations && _annotations[i]) {
+				annotate(img, _annotations[i]);
+			}
+			doubleTest[j.birds[i].img] = true;
+			//deDubbed.push(birds[i]);
 		}
 	}
 	_el.appendChild(birdDiv);
@@ -65,23 +77,27 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset,
 
 function mirror(_birds, _props) {
 	for (let i = 0; i < _birds.length; i+=2) {
-		let leftBird = _birds[i];
-		let rightBird = _birds[i + 1];
-		console.log(leftBird);
-		let xOff = i * _props.space ;
-		leftBird.style.right = (44 - xOff) + "vw";
-		rightBird.style.left = (44 - xOff) + "vw";
-		rightBird.style["z-index"] = _props.zoff + (100 - i);
-		leftBird.style["z-index"] =  _props.zoff + (99 - i);
-		rightBird.classList.add("flip");
-		leftBird.style.width = leftBird.style.height = (_props.size - (i * _props.fade ) )+ "px";
-		rightBird.style.width = rightBird.style.height = (_props.size - (i * _props.fade) )+ "px";
-		leftBird.style.opacity = 0;
-		rightBird.style.opacity = 0;
+		try {
+			let leftBird = _birds[i];
+			let rightBird = _birds[i + 1];
+			console.log(leftBird);
+			let xOff = i * _props.space ;
+			leftBird.style.right = (44 - xOff) + "vw";
+			rightBird.style.left = (44 - xOff) + "vw";
+			rightBird.style["z-index"] = _props.zoff + (100 - i);
+			leftBird.style["z-index"] =  _props.zoff + (99 - i);
+			rightBird.classList.add("flip");
+			leftBird.style.width = leftBird.style.height = (_props.size - (i * _props.fade ) )+ "px";
+			rightBird.style.width = rightBird.style.height = (_props.size - (i * _props.fade) )+ "px";
+			leftBird.style.opacity = 0;
+			rightBird.style.opacity = 0;
 
-		if (_props.bw) {
-			leftBird.classList.add("bw");
-			rightBird.classList.add("bw");
+			if (_props.bw) {
+				leftBird.classList.add("bw");
+				rightBird.classList.add("bw");
+
+			}
+		} catch (_e) {
 
 		}
 	}
@@ -150,10 +166,14 @@ function initBirds() {
 }
 
 
-
+fileBirdSequence("pairs_12570889");
+fileBirdSequence("pairs_15206521");
+fileBirdSequence("pairs_6926887");
 fileBirdSequence("pairs_13940681");
 fileBirdSequence("pairs_9953409");
-fileBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6")
+fileBirdSequence("pairs_9953415");
+fileBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6");
+fileBirdSequence("pairs_ Indigo Bunting (Adult Male)_30");
 
 let start = setInterval(initBirds, 1000);
 
@@ -195,7 +215,7 @@ document.querySelector(".content").scrollTop = 200;
 				case 0:
 					hideHeader(false);
 					
-					buildBirdSequence("pairs_13940681", cage,  true, {size:300, scale:3, position:"bottom", offset:"0px", space:8, fade:3, zoff:0, bw:true, overflow:true}, mirror);
+					buildBirdSequence("pairs_13940681", cage,  true, {size:300, scale:2.5, position:"bottom", offset:"0px", space:7, fade:2, zoff:0, bw:true, overflow:true}, mirror);
 					buildBirdSequence("pairs_ Indigo Bunting (Adult Male)_30", cage,  true, {size:300, scale:1.2, position:"top", offset:"50px", space:4, fade:10, zoff:100}, mirror);
 
 					break;
@@ -226,7 +246,7 @@ document.querySelector(".content").scrollTop = 200;
 						);
 					break;
 				case 2:
-					buildBirdSequence("pairs_9953409", cage,  true, {size:300, scale:3, position:"bottom", offset:"imagenetCollage", space:8, fade:3, zoff:0, bw:true, overflow:true}, mirror);
+					buildBirdSequence("pairs_12570889", document.body,  true, {size:300, scale:1, position:"bottom", offset:"imagenetCollage", space:1, fade:1, zoff:0, bw:false, overflow:true, reverse:false}, mirror);
 
 
 
