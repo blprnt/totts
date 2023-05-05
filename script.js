@@ -27,9 +27,9 @@ function buildBirdSequence(_label, _el, _mirror, _props, _positioner, _scaleset,
 		birdDiv.style.overflow = "hidden";
 	}
 
-
 	if (_props.offset.indexOf("px") == -1) {
-		console.log("BUILD");
+		console.log("BUILDY BUILD");
+		console.log("#" + _props.offset);
 		
 		let holder = document.querySelector("#" + _props.offset);
 		birdDiv.style.top = ((_props.ybump ? _props.ybump:0) + getOffset(holder).top) + "px";
@@ -149,19 +149,10 @@ function initBirds() {
 	clearInterval(start);
 }
 
-fileBirdSequence("pairs_ Greater Roadrunner_30");
-fileBirdSequence("pairs_ Bald Eagle (Immature, juvenile)_30");
-fileBirdSequence("pairs_ Black-throated Blue Warbler (FemaleImmature male)_30");
-fileBirdSequence("pairs_ Indigo Bunting (Adult Male)_30");
-fileBirdSequence("pairs_ Summer Tanager (Adult Male)_30");
-fileBirdSequence("pairs_ Western Tanager (Breeding Male)_30");
-fileBirdSequence("pairs_docs");
-fileBirdSequence("pairs_");
-fileBirdSequence("pairs_13940679");
-fileBirdSequence("pairs_12994082");
+
+
 fileBirdSequence("pairs_13940681");
-fileBirdSequence("pairs_ Downy Woodpecker_30");
-fileBirdSequence("wire_ Painted Bunting (Adult Male)_10");
+fileBirdSequence("pairs_9953409");
 fileBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6")
 
 let start = setInterval(initBirds, 1000);
@@ -209,7 +200,7 @@ document.querySelector(".content").scrollTop = 200;
 
 					break;
 				case 1:
-					buildBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6", document.body, false, {size:400, scale:1., position:"bottom", offset:"woodpeckers", ybump:100, space:6, fade:0}, centerSpread, [1, 0.475, 0.27, 0.23, 0.23, 0.09],
+					buildBirdSequence("wire_ Vermilion Flycatcher (Adult male)_6", document.body, false, {size:400, scale:1., position:"bottom", offset:"LAION", ybump:100, space:6, fade:0}, centerSpread, [1, 0.475, 0.27, 0.23, 0.23, 0.09],
 						[{
 							start:{x:80, y:-50},
 							end:{x:130, y:80},
@@ -234,6 +225,10 @@ document.querySelector(".content").scrollTop = 200;
 						]
 						);
 					break;
+				case 2:
+					buildBirdSequence("pairs_9953409", cage,  true, {size:300, scale:3, position:"bottom", offset:"imagenetCollage", space:8, fade:3, zoff:0, bw:true, overflow:true}, mirror);
+
+
 
 			}
 		}

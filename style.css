@@ -10,6 +10,7 @@ Tale of Two Training Sets Styles
   --color-primary: #3F8C41;
   --wrapper-height: 87vh;
   --image-max-width: 60vw;
+  --image-inner-max-width: 50vw;
   --image-margin: 2rem;
   --font-family: "Avenir";
   --font-family-header: "Futura";
@@ -219,7 +220,8 @@ figcaption {
 }
 
 figure img {
-  max-width:var(--image-max-width)
+  width:100%;
+  max-width: var(--image-inner-max-width);
 }
 
 #sdbird {

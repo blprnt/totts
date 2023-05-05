@@ -68,7 +68,7 @@
         <p>
           The technical process unfolding in the backend is ingenuous. What is known as a transformer model is what processes your prompt, such as "a picture of a bird." It breaks that sentence down into tokens and uses self-attention mechanisms to determine the importance of each word in relation to others while considering their positions in the sequence. The transformer has many layers, and as the tokens pass through the layers, the model is refining a bird image by extracting and combining features from a vast collection of bird images that it was trained on. Finally, it generates a unique image by converting the output vectors representing these relationships into pixel values. That is the numerical blender from which your bird composite emerges. It’s a new thing.  
         </p>
-        <figure class="scrollStep" id="woodpeckers">
+        <figure class="scrollStep" id="LAION">
           <div class="holder"></div>
           <figcaption>Images of Vermilion Flycatchers from the LAION dataset come from many sources including image hosts like SmugMug.</figcaption>
         </figure>
@@ -78,7 +78,7 @@
         <p>
           Merlin’s ability to identify a bird from an image or a song is thanks to a deep convolutional neural network, trained on hundreds of thousands of sounds and images from Cornell’s MacAuley library and hand-tagged by hundreds of volunteer birders. Merlin’s convolutional neural networks by gradually breaking down photos of birds (or images of sound waves) into smaller and smaller pieces and learning important features from them. Each layer of the network performs a specific task, such as removing noise, or identifying shapes like wings or beaks. 
         </p>
-         <figure class="scrollStep" id="nabirds">
+         <figure id="nabirdsDetail">
           <img src="https://machinist.smokingheaps.net/api/datasets/5/files/16193845"/>
           <figcaption>Bird images in the NABirds dataset, used to train Merlin, are carefully annotated by expert volunteers.</figcaption>
         </figure>
@@ -97,7 +97,7 @@
         <p>
           When Serge Belongie joined the Perona Lab for his sabbatical he brought along a stack of books that his advisor at UC Berkeley, Jitendra Malek, had given him. They were field guides for birds. Belongie had always been interested in taxonomies and principles of classification, but the challenge of bird recognition seemed like a pipe dream in the 1990s. The idea never left him. 
         </p>
-        <figure class="scrollStep">
+        <figure>
           <img
             src="images/GuideBook.gif"
           />
@@ -117,7 +117,7 @@
          <p>
           By 2005, computer vision models could only reliably detect four objects: motorbikes, bicycles, people, and cars. In 2007, that number rose to twenty, now including airplanes, birds, bottles, some furniture, a TV. The VOC (Visual Object Class) challenge which is held yearly at the PASCAL conference run by Oxford University was the place where progress was benchmarked. A good model in 2009 could correctly label 72.5% of the test images in the car class in a dataset of 9,000. It could only recognize 59.3% of the dogs and just 44.2% of the bottles.  
         </p>
-        <figure class="scrollStep" id="nabirds">
+        <figure>
           <img src="images/bird_01.jpeg"/>
           <figcaption>Birds were included as one of the 20 object classes in 2009 the PASCAL image challenge.</figcaption>
         </figure>
@@ -189,11 +189,19 @@
       <p>
         Browsing through ImageNet-21k is an experience akin to randomized madness. Choose ten images at random, and you might get a cudweed native to Denmark, a man with a sledgehammer hitting a car, a desklamp spray-painted gold and edged with chainmail, a black-striped damselfish, a pornographic image of a woman, a clothes dryer, and a concertina. The images vary in quality, from stock photos to grainy logos and blurry pics from 2000-era flip phones. It’s all like the detritus you might find at the bottom of a garbage can, if the internet was the garbage can.
       </p>
+      <figure class="scrollStep" id="imagenetCollage">
+          <div class="holder"></div>
+          <figcaption>A selection of images from ImageNet</figcaption>
+        </figure>
 
 <!--COLLAGE - ImageNet-->
       <p>
         The role of the human in ImageNet was meant to end with the Turk workers. Once they’d done their job of tagging, the image set became a computational, meant to be read by machines. And indeed, this was exactly how it was used– and used prodigiously– for the 14 years since its released. ImageNet became the defacto training set for object detection in particular, and for computer vision for widely. The ImageNet Challenge replaced the VOC Challenge at PASCAL and the annual contest became the way innovations in the field were measured and fêted. In 2012 a deep convolutional neural network called AlexNet won the ImageNet Challenge by cutting the classification error rate nearly in half, from 25% to 16%. This was a hugely significant moment in the field of machine learning, seen by many as the moment when the phenomenon of deep learning (which underlies technologies like GPT-3) made its first step into the mainstream.
       </p>
+      <figure>
+          <img src="images/TestChart1.png"/>
+          <figcaption>Paper per week citing ImageNet from 2012 to 2023 on Papers With Code, a popular site for sharing machine learning benchmarks.</figcaption>
+        </figure>
       <p>
         So doing this simple thing, actually looking at the images in ImageNet, was an unexpected use case. It wasn’t designed for human eyes. Back in the motorbikes, bicycles, people, and cars era of computer vision it was still at least somewhat feasible to browse a data set. If you gave nine thousand images three seconds of your attention each, you’d be done in a month of eight hour days. To look at the test set of ImageNet would take you a year. To look at the entire set would take more than a century. So it became a dataset that was very, very difficult to look at. For most of a decade, very few people did.
       </p>
